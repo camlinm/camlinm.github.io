@@ -1,0 +1,103 @@
+---
+layout: default
+title: Willow Creek Brewery
+---
+
+<div class="Banner" id="Beer">
+<div id="PictureOne"></div>
+<div id="PictureTwo"></div>
+<div id="PictureThree"></div>
+<div id="PictureFour"></div>
+</div>
+
+<div class="TwoColumn">
+    <div class="BeerDisplay">
+
+        <div class="beerHeader">
+            <h1>BEER</h1>
+            <h3>Here's what we got</h3>
+        </div>
+
+        <div id="lineStrike"></div>
+
+        <ul class="Beers">
+        {%- for beer in site.beers -%}
+            <li>
+                <div class="HorizontalGroup">
+                    <div> <img src="{{ beer.beerImage }}"> </div>
+                    <div class="VerticalGroup"> 
+                        <ul>
+                            <li> <h2>{{beer.beerName}}</h2> </li>
+                            <li> <h3>{{beer.styleText}}</h3> </li>
+                            <li> 
+                                <p>{{beer.OGValue}} OG | {{beer.IBUValue}} IBU | {{beer.ABVValue}} ABV</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="lineStrike"></div>
+                
+            </li>
+        {%- endfor -%}
+        </ul>
+        
+        <div class="OurStory" id="Story">
+            <h1>
+                OUR STORY
+            </h1>
+            <p>Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story help Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story he's got a gun Story Story Story Story Story Story Story Story Story Story Story Story Story Story Story </p>
+        </div>
+        
+        <div class="ContactUs" id="Contact">
+            <h1>Contact Us</h1>
+            <ul>
+                <li>
+                    <h2>email@gmail.com</h2>
+                </li>
+                <li>
+                    <h2>P: (484) 000-0000</h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="NewsDisplay">
+        <div class="Address">
+            <h1>ADDRESS</h1>
+            <h2>105 Street</h2>
+            <a href="https://www.google.com/maps/place/North+Pole+Lane,+Santa+Claus,+IN+47579/@38.1290419,-86.9184389,17z/data=!3m1!4b1!4m5!3m4!1s0x886e586b4c266a15:0x459a1616a8e89154!8m2!3d38.1290419!4d-86.9162502" target="_blank" id="Button">
+                Directions
+            </a>
+        </div>
+        
+        <div class="pleaseEndMe"> 
+            <div id="lineStrike"></div>
+        </div>
+        
+        <div class="hours">
+            <h1>Monday-Friday</h1>
+            <h2>11:30 am - 9:00 pm</h2>
+            <h1>Saturday</h1>
+            <h2>11:30 am - 9:00 pm</h2>
+            <h1>Sunday</h1>
+            <h2>11:30 am - 9:00 pm</h2>
+        </div>
+        
+        <div id="lineStrike"></div>
+        
+        <ul class="News">
+            {%- for post in site.news -%}
+                <li>
+                    <div class="HorizontalGroup">
+                        <h1>{{post.postTitle}}</h1>
+                        <h4>{{post.stringDate}}</h4>
+                    </div>
+                    
+                    <p>{{post.description}}</p>
+                    
+                    <div id="lineStrike"></div>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+</div>

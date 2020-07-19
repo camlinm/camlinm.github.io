@@ -1,0 +1,6 @@
+name: Brewing Company
+markdown: kramdown
+
+collections:
+ - beers
+ - news

@@ -1,0 +1,318 @@
+*{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* DEFAULT LAYOUT */
+
+body{
+    background-color: #EAE7DC;
+    color: #8E8D8A;
+    width: 100%;
+    margin: 0vw auto;
+}
+
+nav
+{
+    background-color: #D8C3A5;
+    color: #E85A4F;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding-bottom: .2vw;
+    padding-top: .2vw;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.7vw;
+}
+
+nav li
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+h1
+{
+    font-family: 'Oswald', sans-serif;
+}
+
+a
+{
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #E85A4F;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: #E98074;
+}
+
+/* Banner */
+
+.Banner
+{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#PictureOne
+{
+    background-image: url(../PubPictures/pub1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#PictureTwo
+{
+    background-image: url(../PubPictures/pub2.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#PictureThree
+{
+    background-image: url(../PubPictures/pub3.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#PictureFour
+{
+    background-image: url(../PubPictures/pub4.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/*2 Coulmn */
+
+.TwoColumn
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* NEWS */
+
+.NewsDisplay
+{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 30%;
+    margin: auto;
+}
+
+.pleaseEndMe #lineStrike
+{
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.NewsDisplay .Address
+{
+    line-height: 1vw;
+}
+
+.NewsDisplay .Address h2
+{
+    font-size: 1vw;
+}
+
+.NewsDisplay .Address h1
+{
+    font-size: 2vw;
+}
+
+.NewsDisplay .hours h1
+{
+    font-size: 1vw;
+}
+
+.NewsDisplay .hours h2
+{
+    font-size: 0.8vw;
+}
+
+.NewsDisplay .News h1
+{
+    font-size: 1.8vw;
+    line-height: .5vw;
+}
+
+.NewsDisplay .News h4
+{
+    font-size: .8vw;
+    line-height: .5vw;
+}
+
+.NewsDisplay .News p
+{
+    font-size: 1vw;
+    line-height: 1vw;
+}
+
+/*Beer Display */
+
+.BeerDisplay
+{
+    background-color: #D8C3A5;
+    width: 50%;
+    margin: auto;
+    padding: .75vw;
+    margin-right: 0;
+    margin-left: 10%;
+    margin-top: 0%;
+}
+
+.BeerDisplay ul
+{
+    
+}
+
+.BeerDisplay li
+{
+    margin-right: 2.5%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.BeerDisplay .HorizontalGroup
+{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    
+}
+
+.BeerDisplay .VerticalGroup
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    line-height: .5vw;
+}
+
+.beerHeader
+{
+    line-height: .5vw;
+}
+
+.BeerDisplay img
+{
+    width: 6vw;
+    height: 6vw;
+}
+
+.BeerDisplay h1
+{
+    font-size: 2.2vw;
+}
+
+
+.BeerDisplay h2
+{
+    font-size: 1.8vw;
+}
+
+.BeerDisplay h3
+{
+    font-size: .75vw;
+    text-decoration: none;
+}
+
+.BeerDisplay p
+{
+    font-size: .75vw;
+}
+
+.BeerDisplay .OurStory h1
+{
+    font-size: 2vw;
+}
+
+.BeerDisplay .OurStory p
+{
+    font-size: .75vw;
+}
+
+.BeerDisplay .ContactUs h1
+{
+    font-size: 2vw;
+}
+
+.BeerDisplay .ContactUs h2
+{
+    font-size: 1.5vw;
+}
+
+.BeerDisplay .ContactUs ul
+{
+    display: flex;
+}
+
+/*COMPONENTS */
+
+#lineStrike
+{
+    width: 95%;
+    height: .1vw;
+    background-color: #8E8D8A;
+    margin: auto;
+    opacity: .5;
+    border-bottom: 5vw;
+    border-top: 5vw;
+    
+}
+
+#Button
+{
+    background-color: #E98074;
+    border-color: #E85A4F;
+    border-radius: 1vw;
+    border-style: solid;
+    width: 3vw;
+    height: 3vw;
+    color: #EAE7DC;
+    padding: .5vw;
+    font-size: 1vw;
+    text-align: center;
+}
+
+#Button:hover
+{
+    text-decoration: none;
+    background-color: #EAE7DC;
+    color: #E98074;
+}
+
+
+/* Footer */
+
+footer
+{
+    text-align: center;
+    font-size: 1vw;
+}
